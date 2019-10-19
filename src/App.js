@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './favicon-2.ico';
 import './App.css';
 
 function App() {
@@ -7,16 +7,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>Chi Huynh</code>
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Hey, it's Chi 
         </a>
       </header>
       <div className='main-container'>
@@ -24,7 +21,7 @@ function App() {
         <main>main</main>
         <aside>
           menu
-          <button></button>
+          <button href='https://ga-dtr.herokuapp.com/login'><img src={logo}  alt="logo" /></button>
           <button></button>
           <button></button>
         </aside>
