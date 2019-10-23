@@ -4,13 +4,15 @@
   
 }
 
-* {
-  /* background: rgba(0,0,0,.05);   */
-  box-shadow: 0 0 0 1px black;
-}
+// * {
+//   /* background: rgba(0,0,0,.05);   */
+//   box-shadow: 0 0 0 1px black;
+// }
 
 .App-logo {
   height: 10vmin;
+  border: none;
+  background-color: transparent
 }
 
 .App-header {
@@ -32,6 +34,7 @@
 
 .App-link {
   color: #09d3ac;
+  
 }
 
 .main-container{
@@ -83,4 +86,5 @@ button{
 
 img {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter:         drop-shadow(5px 5px 5px #222);}
+  filter:         drop-shadow(5px 5px 5px #222);
+}

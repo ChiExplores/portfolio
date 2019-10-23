@@ -3,6 +3,9 @@
 }
 
 .introduction {
-	background-color: coral;
+	background-color: rgb(38, 210, 152);
+	border-radius: 3px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter:         drop-shadow(5px 5px 5px #222);
 }
 

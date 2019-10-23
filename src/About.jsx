@@ -15,6 +15,7 @@ const About = (props) => {
 				Contact:
 		<p>Resume, contact[at]chihuynh[dot]me</p>
 			</div>
+
 		</>
 	);
 }
