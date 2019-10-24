@@ -12,7 +12,7 @@ const Twentyfourtyeight = () => {
 				- HTML
 				- CSS
 				</p>
-			<h4>README HERE</h4>
+			<a href='https://github.com/ChiExplores/2048/blob/master/README.md' target="_blank" rel="noopener noreferrer">	<h4>README HERE</h4></a>
 			<a href='https://ga-dtr.herokuapp.com/login' target="_blank" rel="noopener noreferrer">Play Game Here</a>
 
 		</>

@@ -15,7 +15,7 @@ const DTR = (props) => {
 				- HTML
 				- SCSS
 				</p>
-			<h4>README HERE</h4>
+			<a href='https://github.com/ChiExplores/dtr/blob/master/README.md' target="_blank" rel="noopener noreferrer"><h4>README HERE</h4></a>
 			<a href='https://ga-dtr.herokuapp.com/login' target="_blank" rel="noopener noreferrer">Link to Project</a>
 		</>
 	);

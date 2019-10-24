@@ -13,7 +13,8 @@ const AStardustTruce = (props) => {
 				- HTML
 				- SCSS
 				</p>
-			<h4>README HERE</h4>
+
+			<a href='https://github.com/ChiExplores/a-stardust-truce/blob/dev/README.md' target="_blank" rel="noopener noreferrer"><h4>README HERE</h4></a>
 			<a href='https://astardusttruce.herokuapp.com/' target="_blank" rel="noopener noreferrer">Check it out here!</a>
 		</>
 	);

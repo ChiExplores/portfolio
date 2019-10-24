@@ -13,7 +13,8 @@ const FlightLogger = (props) => {
 				- HTML
 				- CSS
 				</p>
-			<h4>README and Github</h4>
+
+			<a href='https://github.com/ChiExplores/flight-log-book/blob/master/README.md' target="_blank" rel="noopener noreferrer"><h4>README and Github</h4></a>
 			<a href='http://sei-flight-logger.herokuapp.com/students' target="_blank" rel="noopener noreferrer">Link to Project</a>
 		</>
 	);

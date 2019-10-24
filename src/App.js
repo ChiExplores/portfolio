@@ -15,8 +15,8 @@ function App() {
   const [projectNum, setProjectNum] = useState(0);
 
 
-  const onClick = (int) => {
-    setProjectNum(parseInt(int.target.id));
+  const onClick = (e) => {
+    setProjectNum(parseInt(e.target.id));
   }
 
   let main =
@@ -38,13 +38,14 @@ function App() {
     <div className="App">
       <div className='main-container'>
         <header className="App-header">
-
+        
         </header>
         <main>
           {main}
         </main>
         <aside>
-          Projects
+         <h1>Projects</h1> 
+        
           <Projects onClick={onClick} />
         </aside>
       </div>
