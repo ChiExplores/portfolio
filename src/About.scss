@@ -4,15 +4,23 @@
 	font-size: 40px;
 	margin: -2px;
 }
-
-.introduction {
-	background-color: rgb(146, 230, 202);
-
-  background: rgb(63,94,251);
-	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(106,73,212,1) 62%, rgba(252,70,200,0.6964986678265056) 100%);
+#contacts {
+	background: radial-gradient(circle, rgb(219, 222, 237) 0%, rgba(105, 73, 212, 0.495) 62%, rgba(252,70,200,0.6964986678265056) 100%);
 	border-radius: 3px;
 	-webkit-filter: drop-shadow(5px 5px 5px #222);
 	filter:drop-shadow(5px 5px 5px #222);
+	color: rgb(1, 1, 16);
+}
+
+.introduction {
+	
+	width: 50vw;
+
+  // background: rgb(63,94,251);
+	// background: radial-gradient(circle, rgb(219, 222, 237) 0%, rgba(105, 73, 212, 0.495) 62%, rgba(252,70,200,0.6964986678265056) 100%);
+	border-radius: 3px;
+	// -webkit-filter: drop-shadow(5px 5px 5px #222);
+	// filter:drop-shadow(5px 5px 5px #222);
 
 }
 
