@@ -18,25 +18,19 @@ const Project = (props) => {
 
 			<div className='project-icon'>
 				<button className='dtr' onClick={props.onClick} >
-					<a href='https://ga-dtr.herokuapp.com/login' target="_blank" rel="noopener noreferrer">
-						<img src={dtr} className="Dtr-logo" alt="dtr" id='2' />
-					</a>
+					<img src={dtr} className="Dtr-logo" alt="dtr" id='2' />
 				</button>
 				DTR
 			</div>
 			<div className='project-icon'>
-				<button className='2048'>
-					<a href='https://ga-dtr.herokuapp.com/login' target="_blank" rel="noopener noreferrer">
-						<img src={project1} className="2048-logo" alt="2048" id='3' />
-					</a>
+				<button className='2048' onClick={props.onClick}>
+					<img src={project1} className="2048-logo" alt="2048" id='3' />
 				</button>
 				2048
 		</div>
 			<div className='project-icon'>
-				<button className='stardust-truce'>
-					<a href='https://astardusttruce.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-						<img src={stardust} className="stardust-truce-logo" alt="stardust-truce" id='4' />
-					</a>
+				<button className='stardust-truce' onClick={props.onClick}>
+					<img src={stardust} className="stardust-truce-logo" alt="stardust-truce" id='4' />
 				</button>
 				Stardust Truce
 		</div>

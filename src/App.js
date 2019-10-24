@@ -4,6 +4,8 @@ import Projects from './Project';
 import About from './About';
 import Twentyfortyeight from './2048';
 import AStardustTruce from './AStardustTruce';
+import DTR from './Dtr.jsx';
+import FlightLogger from './FlightLogger.jsx';
 
 import './App.scss';
 
@@ -17,30 +19,18 @@ function App() {
     setProjectNum(parseInt(int.target.id));
   }
 
-  // useEffect(() => {
-  //   renderProject();
-  // });
-
-  // let renderProject = () => {
-  //   console.log(projectNum)
-  //   switch (projectNum) {
-  //     case 0:
-  //       return setProjectComp(<About />);
-  //     case 1:
-  //       return setProjectComp(<Twentyfortyeight />);
-  //     default:
-  //       return null;
-  //   }
-  // }
   let main =
     (projectNum === 0) ?
       <About /> :
       (projectNum === 1) ?
-        <Twentyfortyeight /> :
+        <FlightLogger /> :
         (projectNum === 2) ?
-          <AStardustTruce /> :
-          (projectNum === 3)
-
+          <DTR /> :
+          (projectNum === 3) ?
+            <Twentyfortyeight /> :
+            (projectNum === 4) ?
+              <AStardustTruce /> :
+              (projectNum === 0)
 
 
 

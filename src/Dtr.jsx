@@ -1,0 +1,24 @@
+import React from 'react';
+
+const DTR = (props) => {
+	return (
+		<>
+			<h1>About Project</h1>
+			<p>DTR stands for Down the Rabbit hole, but also Define The Relationship between Wikimedia pages. I learned that when you webscrape, you have to really look into the site's html tree to understand where you want to scrape to look for the information you need. </p>
+			<h2>Tech Stack</h2>
+			<p>
+				- React
+				- Javascript
+				- MongoDB
+				- Express
+				- NodeJS
+				- HTML
+				- SCSS
+				</p>
+			<h4>README HERE</h4>
+			<a href='https://ga-dtr.herokuapp.com/login' target="_blank" rel="noopener noreferrer">Link to Project</a>
+		</>
+	);
+}
+
+export default DTR;
