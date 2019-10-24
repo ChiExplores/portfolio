@@ -6,7 +6,7 @@ const About = (props) => {
 		<>
 			<div className='introduction' id='about'>
 				<p>Chi Huynh:</p>
-				<p>
+				<p id='description'>
 					Knowedge is power, but sharing knowledge is progress.
 					My interest in computers deepened when I learned about the history of Smalltalk-80, a language created by the Xerox Research Group.
 					I became inspired and gave two tech talks in the last two years about Pharo, a Smalltalk language. I also voluteered at a European Smalltalk User Group event and learned a lot from the mentors I got to know there.
