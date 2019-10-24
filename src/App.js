@@ -1,28 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.ico'
 import Projects from './Project';
 import About from './About';
+import Twentyfortyeight from './2048';
+import AStardustTruce from './AStardustTruce';
+
 import './App.scss';
 
 function App() {
 
-  const onClick = () => {
-    alert('hello')
+
+  const [projectNum, setProjectNum] = useState(0);
+
+
+  const onClick = (int) => {
+    setProjectNum(parseInt(int.target.id));
   }
+
+  // useEffect(() => {
+  //   renderProject();
+  // });
+
+  // let renderProject = () => {
+  //   console.log(projectNum)
+  //   switch (projectNum) {
+  //     case 0:
+  //       return setProjectComp(<About />);
+  //     case 1:
+  //       return setProjectComp(<Twentyfortyeight />);
+  //     default:
+  //       return null;
+  //   }
+  // }
+  let main =
+    (projectNum === 0) ?
+      <About /> :
+      (projectNum === 1) ?
+        <Twentyfortyeight /> :
+        (projectNum === 2) ?
+          <AStardustTruce /> :
+          (projectNum === 3)
+
+
+
+
   return (
     <div className="App">
       <div className='main-container'>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <a
-            className="App-link"
-            href="#"
-            target="_blank"
-          >
-          </a>
+
         </header>
         <main>
-          <About/>
+          {main}
         </main>
         <aside>
           Projects
