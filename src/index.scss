@@ -1,12 +1,16 @@
 body {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
   font-family: 'Nanum Pen Script', cursive;
   font-size: 20px;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 //  background-color: black;
+}
+
+.about {
+  font-family: 'Quicksand';
+  font-size: 15px;
 }
 
 code {

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.ico'
 import Projects from './Project';
 import About from './About';
 import Twentyfortyeight from './2048';

@@ -4,7 +4,7 @@ const AStardustTruce = (props) => {
 	return (
 		<>
 			<h1>About Project</h1>
-			<p>This is a fun project to help students learn how to implement different data structures. I worked with two other devs and was in charge of the git workflow. We worked on branch features (initials_feature) and pushed to dev when ready. My team did code reviews (you are not allow to approve ro review your own code) and when we were ready, we push code to master. </p>
+			<p className='about'>This is a fun project to help students learn how to implement different data structures. I worked with two other devs and was in charge of the git workflow. We worked on branch features (initials_feature) and pushed to dev when ready. My team did code reviews (you are not allow to approve ro review your own code) and when we were ready, we push code to master. </p>
 			<h2>Tech Stack</h2>
 			<p>
 				- Django
