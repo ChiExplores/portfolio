@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Projects from './Project';
 import About from './About';
 import Twentyfortyeight from './2048';
@@ -37,14 +37,14 @@ function App() {
     <div className="App">
       <div className='main-container'>
         <header className="App-header">
-        
+
         </header>
         <main>
           {main}
         </main>
         <aside>
-         <h1>Projects</h1> 
-        
+          <h1>Projects</h1>
+
           <Projects onClick={onClick} />
         </aside>
       </div>

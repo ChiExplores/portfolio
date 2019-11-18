@@ -5,7 +5,7 @@ const About = (props) => {
 	return (
 		<>
 			<div className='introduction' id='about'>
-				<p>Chi HB Huynh:</p>
+				<p>Chi Huynh:</p>
 				<p id='description' className='about'>
 					Knowedge is power, but sharing knowledge is progress.
 					My interest in computers deepened when I learned about the history of Smalltalk-80, a language created by the Xerox Research Group.
