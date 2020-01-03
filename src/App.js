@@ -41,12 +41,11 @@ function App() {
         </header>
         <main>
           {main}
-        </main>
-        <aside>
           <h1>Projects</h1>
 
           <Projects onClick={onClick} />
-        </aside>
+        </main>
+
       </div>
     </div>
   );
