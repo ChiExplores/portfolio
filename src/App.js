@@ -5,6 +5,7 @@ import Twentyfortyeight from './2048';
 import AStardustTruce from './AStardustTruce';
 import DTR from './Dtr.jsx';
 import FlightLogger from './FlightLogger.jsx';
+import Navigation from './Navigation.jsx';
 
 import './App.scss';
 
@@ -32,13 +33,12 @@ function App() {
               (projectNum === 0)
 
 
-
   return (
     <div className="App">
       <div className='main-container'>
         <header className="App-header">
-
         </header>
+        <Navigation logoTitle='Chi Hu' />
         <main>
           {main}
           <h1>Projects</h1>
