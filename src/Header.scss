@@ -1,0 +1,16 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	letter-spacing: 1pt;
+	font-size: 72px;
+  background: -webkit-linear-gradient(#D9AFD9, #FFB500, #B880B2);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	.title-name{
+		font-size: 200px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

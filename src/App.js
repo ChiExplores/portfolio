@@ -6,6 +6,7 @@ import AStardustTruce from './AStardustTruce';
 import DTR from './Dtr.jsx';
 import FlightLogger from './FlightLogger.jsx';
 import Navigation from './Navigation.jsx';
+import Header from './Header.jsx';
 
 import './App.scss';
 
@@ -36,9 +37,8 @@ function App() {
   return (
     <div className="App">
       <div className='main-container'>
-        <header className="App-header">
-        </header>
-        <Navigation logoTitle='Chi Hu' />
+
+        <Header />
         <main>
           {main}
           <h1>Projects</h1>
