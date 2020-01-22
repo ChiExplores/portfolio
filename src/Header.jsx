@@ -1,51 +1,50 @@
-import React, { Component } from 'react';
+import React from 'react';
 import desktopImage from './images/cloud-background.jpg';
 import './Header.scss';
 import Nav from './Navigation'
 
 
-const background = window.innerWidth >= 650 ? { backgroundImage: `url(${desktopImage})`} : null;
+const background = window.innerWidth >= 650 ? { backgroundImage: `url(${desktopImage})` } : null;
 const nav = window.innerWidth < 650 ? <Nav /> : '';
 
-class Header extends Component {
-  render() {
-    return (
-      <>
-        <header style={ background }>
+function Header() {
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  });
 
-          --.--.
-					....
-				 ...
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+      window.addEventListener('resize', handleResize)
+      return _ => {
+        window.removeEventListener('resize', handleResize)
+      }
+    }
+  })
+  return (
+    <>
+    {nav}
+    <header style={background}>
+      --.--.
+      ....
+     ...
 
-				 <div className="title-name">Chi</div>
-          <div>
-            A Little Serious.
-						A Little Silly.
-						Very Dedicated.
-					</div>
+     <div className="title-name">Chi</div>
+      <div className="header-text">
+        A Little Serious.
+        A Little Silly.
+        Very Dedicated.
+      </div>
 
-        </header>
+    </header>
 
-      </>
-    )
-  };
-};
-
+  </>
+  )
+}
 
 export default Header;
 
-
-
-const App = () => {
-  const imageUrl = window.innerWidth >= 650 ? desktopImage : '';
-
-
-  return (
-    <div className="App" style={{ backgroundImage: `url(${imageUrl})` }}>
-      <div className="App-content">
-        <h1>Pineapples</h1>
-        <p>They are good</p>
-      </div>
-    </div>
-  );
-};
