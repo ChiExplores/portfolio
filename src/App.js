@@ -35,20 +35,26 @@ function App() {
 
 
   return (
-    <div className="App">
-      <div className='main-container'>
+    <div className='main-container'>
+      <header></header>
+      <nav></nav>
+      <Header className="header" />
+      {/* <Navigation className="nav"/> */}
+      <aside>
+        <About />
+      </aside>
 
-        <Header />
-        <main>
-          {main}
+      <main>
+        {/* {main}
           <h1>Projects</h1>
-
-          <Projects onClick={onClick} />
-        </main>
-
-      </div>
+          <Projects onClick={onClick} /> */}
+      </main>
+      <footer>Made by Chi</footer>
     </div>
   );
 }
+
+
+
 
 export default App;
