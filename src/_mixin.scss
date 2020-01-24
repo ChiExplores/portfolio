@@ -7,8 +7,10 @@
 	position: relative;
 }
 
-
-// linear-gradient(200deg, white 10%, violet 30%,yellow 90%, transparent 100%)
+@mixin gridCenter {
+  justify-items: center;
+	display: grid;
+}
 
 
 @mixin horizontal-gradient($from, $to, $stop: 100%) {

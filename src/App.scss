@@ -1,12 +1,14 @@
+@import './mixin.scss';
+
 .main-container{
-  display: grid;
+	display: grid;
   grid-template-rows: 1fr 5fr 1fr;
   grid-template-columns: 3fr 5fr .5fr;
   grid-template-areas: 
     "header header header"
     "about main nav"
     "footer footer footer";
-  grid-gap: .3em;
+  grid-gap: 1em;
 }
 
 header{
@@ -14,17 +16,18 @@ header{
 	background-color: teal;
 }
 
-
 nav {
 	grid-area: nav;
 }
 main{
 	grid-area: main;
-	background-color: lightblue;
+	// background-color: lightblue;
+	@include gridCenter;
 	
 }
 aside{
 	grid-area: about;
+	@include gridCenter;
 }
 footer{
 	grid-area: footer;
