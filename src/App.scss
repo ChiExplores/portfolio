@@ -1,7 +1,7 @@
 .main-container{
   display: grid;
   grid-template-rows: 1fr 5fr 1fr;
-  grid-template-columns: 3fr 5fr 20px;
+  grid-template-columns: 3fr 5fr .5fr;
   grid-template-areas: 
     "header header header"
     "about main nav"
@@ -13,19 +13,18 @@ header{
 	grid-area: header;
 	background-color: teal;
 }
-nav{
+
+
+nav {
 	grid-area: nav;
-	background-color: tomato;
-	display: block;
 }
 main{
 	grid-area: main;
 	background-color: lightblue;
+	
 }
 aside{
 	grid-area: about;
-	color: red;
-	background-color: orange;
 }
 footer{
 	grid-area: footer;

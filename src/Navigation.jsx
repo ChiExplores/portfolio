@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './Navigation.scss'
 import logo from './logo.ico'
 
-// const webNav = 
+
 class Navigation extends Component {
   render() {
     const sections = ['Home', 'Projects', 'Contact', 'About', 'Medium'];
     const navLinks = sections.map((section, idx) => {
       return (
         <>
-        <li><a href={"#" + section} key={idx}>{section}</a></li>
+          <li><a href={"#" + section} key={idx}>{section}</a></li>
         </>
       )
     });
@@ -19,7 +19,7 @@ class Navigation extends Component {
         <nav>
           <h2 className="logo">{this.props.logoTitle}</h2>
           <ul>
-            {navLinks}
+            {navLinks} 
           </ul>
         </nav>
       </>

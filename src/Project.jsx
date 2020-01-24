@@ -10,7 +10,7 @@ import './Project.scss'
 
 const Project = (props) => {
 	return (
-		<>
+		<div className='project-menu'>
 			<div className='about-icon'>
 				<button className='about' onClick={props.onClick} >
 					<img src={logo} className="about-logo" alt="about" id='0' />
@@ -40,7 +40,7 @@ const Project = (props) => {
 				</button>
 				Stardust Truce
 		</div>
-		</>
+		</div>
 	);
 }
 

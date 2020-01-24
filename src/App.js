@@ -11,18 +11,14 @@ import Header from './Header.jsx';
 import './App.scss';
 
 function App() {
-
-
   const [projectNum, setProjectNum] = useState(0);
-
-
   const onClick = (e) => {
     setProjectNum(parseInt(e.target.id));
   }
 
   let main =
     (projectNum === 0) ?
-      <About /> :
+      <FlightLogger /> :
       (projectNum === 1) ?
         <FlightLogger /> :
         (projectNum === 2) ?
@@ -37,17 +33,15 @@ function App() {
   return (
     <div className='main-container'>
       <header></header>
-      <nav></nav>
       <Header className="header" />
-      {/* <Navigation className="nav"/> */}
+      <Navigation/>
       <aside>
         <About />
       </aside>
-
       <main>
-        {/* {main}
-          <h1>Projects</h1>
-          <Projects onClick={onClick} /> */}
+        <h1>Projects</h1>
+        <Projects onClick={onClick} />
+        {main}
       </main>
       <footer>Made by Chi</footer>
     </div>
