@@ -24,3 +24,18 @@ footer{
 	background-color: lightgreen;
 }
 
+.row{
+	color:red;
+
+}
+@media screen and (min-width: 601px) {
+	.row {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 601px) {
+	.row {
+		font-size: 10px;
+	}
+}
