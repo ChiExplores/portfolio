@@ -9,9 +9,13 @@ header{
 nav {
 	grid-area: nav;
 }
-main{
+
+.main-body{
 	grid-area: main;
-	// background-color: lightblue;
+	background: url('./images/cloud-background.jpg');
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: orange;
 	@include gridCenter;
 	
 }

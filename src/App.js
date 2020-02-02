@@ -7,8 +7,8 @@ import DTR from './Dtr.jsx';
 import FlightLogger from './FlightLogger.jsx';
 import Navigation from './Navigation.jsx';
 import Header from './Header.jsx';
+import Contact from  './Contact.jsx';
 import { Container, Row, Col } from 'react-bootstrap';
-
 
 import './App.scss';
 
@@ -43,6 +43,7 @@ function App() {
       </Row>
 
       {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+      <div className='main-body'>
       <Row>
         <Col xs={6} md={6}>
           xs=6 md=4
@@ -53,13 +54,7 @@ function App() {
         </Col>
         <Col xs={6} md={6}>
           xs=6 md=4
-      <div className='introduction' id='contacts'>
-            <p>Contact:</p>
-            <p>Email: contact[at]chihuynh[dot]me</p>
-            <p>Github: <a href='https://github.com/Chiexplores' target="_blank" rel="noopener noreferrer">Link</a></p>
-            <p>LinkedIn: <a href='https://www.linkedin.com/in/chihuynh7/' target="_blank" rel="noopener noreferrer">Link</a></p>
-            <a href='chi-resume.pdf' download><h2>Download Resume</h2></a>
-          </div>
+          <Contact/>
         </Col>
       </Row>
 
@@ -74,6 +69,7 @@ function App() {
           {main}
         </Col>
       </Row>
+      </div>
     </Container>
   );
 }

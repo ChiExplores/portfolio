@@ -29,17 +29,12 @@ function Header() {
     <>
     {nav}
     <header style={background}>
-      --.--.
-      ....
-     ...
-
-     <div className="title-name">Chi</div>
+      <div className="title-name">Chi</div>
       <div className="header-text">
-        A Little Serious.
-        A Little Silly.
-        Very Dedicated.
+        <p>A Little Serious.</p>
+        <p>A Little Silly.</p>
+        <p>Very Dedicated.</p>
       </div>
-
     </header>
 
   </>
