@@ -46,14 +46,11 @@ function App() {
       <div className='main-body'>
       <Row>
         <Col xs={6} md={6}>
-          xs=6 md=4
-          ABOUT
-      <aside>
+          <aside>
             <About />
           </aside>
         </Col>
         <Col xs={6} md={6}>
-          xs=6 md=4
           <Contact/>
         </Col>
       </Row>
