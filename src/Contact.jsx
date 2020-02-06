@@ -1,6 +1,9 @@
 
 import React from "react";
-import {Form, Button} from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
+
+
+
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -14,34 +17,25 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <>
-      <Form onSubmit={this.submitForm}
+      <Form
+        onSubmit={this.submitForm}
         action="https://formspree.io/mpzdrnyv"
-        method="POST">
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group controlId="formPlainText" >
-          <Form.Label>Message</Form.Label>
-          <Form.Control type="text" as="textarea" placeholder="message here" />
-        </Form.Group>
-        {status === "SUCCESS" ? <p>Thanks!</p> :  <Button type="submit">Submit</Button>}
+        method="POST"
+      >
+        <Form.Label>Email:</Form.Label>
+        <Form.Control type="email" name="email" />
+        <Form.Label>Message:</Form.Label>
+        <Form.Control type="text" name="message" as="textarea" />
+        {status === "SUCCESS" ? <p>Thank you!</p> : <Button type="submit">Submit</Button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </Form>
-      </>
     );
   }
 
   submitForm(ev) {
-    console.log(ev.target);
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
-    console.log(data)
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
     xhr.setRequestHeader("Accept", "application/json");
@@ -54,7 +48,6 @@ export default class MyForm extends React.Component {
         this.setState({ status: "ERROR" });
       }
     };
-    console.log(xhr)
     xhr.send(data);
   }
 }
