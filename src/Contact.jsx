@@ -1,20 +1,60 @@
-import React from 'react';
-const Contact = () => {
-  return (
-    <>
-      <div className='introduction' id='contacts'>
-        <p>Contact:</p>
-        <p>Email: contact[at]chihuynh[dot]me</p>
-        <p>Github: <a href='https://github.com/Chiexplores' target="_blank" rel="noopener noreferrer">Link</a></p>
-        <p>LinkedIn: <a href='https://www.linkedin.com/in/chihuynh7/' target="_blank" rel="noopener noreferrer">Link</a></p>
-        <a href='chi-resume.pdf' download><h2>Download Resume</h2></a>
-      </div>
-    </>
-  );
+
+import React from "react";
+import {Form, Button} from "react-bootstrap";
+
+export default class MyForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: ""
+    };
+  }
+
+  render() {
+    const { status } = this.state;
+    return (
+      <>
+      <Form onSubmit={this.submitForm}
+        action="https://formspree.io/mpzdrnyv"
+        method="POST">
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+          </Form.Text>
+        </Form.Group>
+
+        <Form.Group controlId="formPlainText" >
+          <Form.Label>Message</Form.Label>
+          <Form.Control type="text" as="textarea" placeholder="message here" />
+        </Form.Group>
+        {status === "SUCCESS" ? <p>Thanks!</p> :  <Button type="submit">Submit</Button>}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+      </Form>
+      </>
+    );
+  }
+
+  submitForm(ev) {
+    console.log(ev.target);
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    console.log(data)
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    console.log(xhr)
+    xhr.send(data);
+  }
 }
-
-export default Contact;
-
-
-
-
