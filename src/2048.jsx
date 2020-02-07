@@ -6,7 +6,7 @@ const Twentyfourtyeight = () => {
 	return (
 		<>
 			<h1>About Project</h1>
-			<img src={demo} alt="2048-demo"/>
+			<img src={demo} className="demo-img" alt="2048-demo"/>
 			<p className = 'about'>This was a simple 2048 game where you move the tiles with the arrow keys on your keyboard to match numbers to add up to 2048. I had fun learning how to rotate a matrix so that I can move the boxes left or right and decide whether or not to add the numbers if the adjacents ones match. </p>
 			<h2>Tech Stack</h2>
 			<p>
