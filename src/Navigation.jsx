@@ -5,7 +5,7 @@ import logo from './logo.ico'
 
 class Navigation extends Component {
   render() {
-    const sections = ['Home', 'Projects', 'Contact', 'About', 'Medium'];
+    const sections = ['Home', 'Github', 'Medium'];
     const navLinks = sections.map((section, idx) => {
       return (
         <>

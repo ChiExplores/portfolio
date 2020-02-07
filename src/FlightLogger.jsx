@@ -1,9 +1,11 @@
 import React from 'react';
+import demo from './images/flight-demo.png'
 
 const FlightLogger = (props) => {
 	return (
 		<>
 			<h1>About Project</h1>
+			<img src={demo}></img>
 			<p className = 'about'>I am a student pilot and as a pilot, you get a physical flight logger for instructors to sign you off when you take lessons. I decided I could make my own logger where you can input the date, description, plane, and instructor you were with for each lesson.</p>
 			<h2>Tech Stack</h2>
 			<p>

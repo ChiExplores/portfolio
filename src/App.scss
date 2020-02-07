@@ -13,8 +13,8 @@ nav {
 .main-body{
 	grid-area: main;
 	background: url('./images/cloud-background.jpg');
+	color:white;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	background-color: orange;
 	@include gridCenter;
 }
@@ -28,7 +28,7 @@ footer{
 }
 
 .row{
-	color:red;
+	color:white;
 
 }
 @media screen and (min-width: 601px) {
