@@ -7,7 +7,7 @@ import DTR from './Dtr.jsx';
 import FlightLogger from './FlightLogger.jsx';
 import Navigation from './Navigation.jsx';
 import Header from './Header.jsx';
-import Contact from  './Contact.jsx';
+import Contact from './Contact.jsx';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import './App.scss';
@@ -44,28 +44,28 @@ function App() {
 
       {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
       <div className='main-body'>
-      <Row>
-        <Col xs={6} md={6}>
-          <aside>
-            <About />
-          </aside>
-        </Col>
-        <Col xs={6} md={6}>
-          <Contact/>
-        </Col>
-      </Row>
+        <Row>
+          <Col xs={6} md={6}>
+            <aside>
+              <About />
+            </aside>
+          </Col>
+          <Col xs={6} md={6}>
+            <Contact />
+          </Col>
+        </Row>
 
-      {/* Columns are always 50% wide, on mobile and desktop */}
-      <Row>
-        <Col xs={12}>
-          <Projects onClick={onClick} />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={12} lg={true}>
-          {main}
-        </Col>
-      </Row>
+        {/* Columns are always 50% wide, on mobile and desktop */}
+        <Row>
+          <Col xs={12}>
+            <Projects onClick={onClick} />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} lg={true}>
+            {main}
+          </Col>
+        </Row>
       </div>
     </Container>
   );

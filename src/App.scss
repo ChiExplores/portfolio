@@ -3,7 +3,6 @@
 
 header{
 	grid-area: header;
-	background-color: teal;
 }
 
 nav {
@@ -15,8 +14,15 @@ nav {
 	background: url('./images/cloud-background.jpg');
 	color:white;
 	-webkit-background-clip: text;
-	background-color: orange;
 	@include gridCenter;
+
+	h1, h4{
+		margin: .5em;
+		color:white;
+	}
+	a{
+		color: white;
+	}
 }
 aside{
 	grid-area: about;
@@ -24,7 +30,6 @@ aside{
 }
 footer{
 	grid-area: footer;
-	background-color: lightgreen;
 }
 
 .row{
