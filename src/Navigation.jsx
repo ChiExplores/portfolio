@@ -6,10 +6,15 @@ import logo from './logo.ico'
 class Navigation extends Component {
   render() {
     const sections = ['Home', 'Github', 'Medium'];
+    const links = {
+      'Home': '/' ,
+      'Github': 'github.com/chiexplores',
+      'Medium': 'https://medium.com/@chi.huynh'
+    }
     const navLinks = sections.map((section, idx) => {
       return (
         <>
-          <li><a href={"#" + section} key={idx}>{section}</a></li>
+          <li><a href={links[section]} key={idx}>{section}</a></li>
         </>
       )
     });
