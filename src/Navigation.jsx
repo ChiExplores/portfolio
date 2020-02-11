@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Navigation.scss'
-import logo from './logo.ico'
 
 
 class Navigation extends Component {

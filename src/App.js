@@ -5,12 +5,13 @@ import Twentyfortyeight from './2048';
 import AStardustTruce from './AStardustTruce';
 import DTR from './Dtr.jsx';
 import FlightLogger from './FlightLogger.jsx';
-import Navigation from './Navigation.jsx';
+import Nav from './Navigation.jsx';
 import Header from './Header.jsx';
 import Contact from './Contact.jsx';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import './App.scss';
+const nav = window.innerWidth > 650 ? <Nav /> : '';
 
 function App() {
   const [projectNum, setProjectNum] = useState(0);
@@ -38,7 +39,7 @@ function App() {
       <Row>
         <Col xs={12} md={8}>
           <Header className="header" />
-          <Navigation />
+          {nav}
         </Col>
       </Row>
 
@@ -54,14 +55,13 @@ function App() {
             <Contact />
           </Col>
         </Row>
-
         {/* Columns are always 50% wide, on mobile and desktop */}
-        <Row >
-          <Col xs={12} lg={true} >
+        <Row>
+          <Col xs={12} lg={true}>
             <Projects onClick={onClick} />
           </Col>
         </Row>
-        <Row>
+        <Row >
           <Col xs={12} lg={true}>
             {main}
           </Col>
