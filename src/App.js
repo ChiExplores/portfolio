@@ -43,7 +43,7 @@ function App() {
       </Row>
 
       {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
-      <div className='main-body'>
+      <div className="main-body">
         <Row>
           <Col xs={6} md={6}>
             <aside>
@@ -56,8 +56,8 @@ function App() {
         </Row>
 
         {/* Columns are always 50% wide, on mobile and desktop */}
-        <Row>
-          <Col xs={12}>
+        <Row >
+          <Col xs={12} lg={true} >
             <Projects onClick={onClick} />
           </Col>
         </Row>

@@ -2,7 +2,6 @@
 	width:100px;
 	height:100px;
 	text-align: center;
-	
 }
 
 .project-menu{
@@ -17,8 +16,21 @@ button{
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	color: white;
+}
+
+@media screen and (max-width: 601px) {
+	.project-icon{
+		font-size: 10px;
+	}
 }
 .demo-img{
 	max-width: 50%;
 	height: auto;
+	
+}
+
+.col-lg{
+	display: grid;
+	justify-items: center;
 }
