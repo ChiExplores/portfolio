@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.26313368.chunk.css",
+    "main.js": "/portfolio/static/js/main.8dc279a5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8dc279a5.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.652d903d.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.652d903d.js.map",
+    "static/js/2.c5959274.chunk.js": "/portfolio/static/js/2.c5959274.chunk.js",
+    "static/js/2.c5959274.chunk.js.map": "/portfolio/static/js/2.c5959274.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.7480512f55c9dd472505fe81fcd02179.js": "/portfolio/precache-manifest.7480512f55c9dd472505fe81fcd02179.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.26313368.chunk.css.map": "/portfolio/static/css/main.26313368.chunk.css.map",
+    "static/js/2.c5959274.chunk.js.LICENSE": "/portfolio/static/js/2.c5959274.chunk.js.LICENSE",
+    "static/media/2048-demo.gif": "/portfolio/static/media/2048-demo.3f7290c0.gif",
+    "static/media/2048.ico": "/portfolio/static/media/2048.8d95fe35.ico",
+    "static/media/App.scss": "/portfolio/static/media/cloud-background.983ef34e.jpg",
+    "static/media/dtr-demo.png": "/portfolio/static/media/dtr-demo.8aef3d4e.png",
+    "static/media/dtr.ico": "/portfolio/static/media/dtr.624e7c20.ico",
+    "static/media/favicon-4.ico": "/portfolio/static/media/favicon-4.76fe893a.ico",
+    "static/media/flight-demo.png": "/portfolio/static/media/flight-demo.4b037a44.png",
+    "static/media/flight-logger.ico": "/portfolio/static/media/flight-logger.b39430d4.ico",
+    "static/media/logo.ico": "/portfolio/static/media/logo.43a77da7.ico",
+    "static/media/sdt-demo.gif": "/portfolio/static/media/sdt-demo.7052c441.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.652d903d.js",
+    "static/js/2.c5959274.chunk.js",
+    "static/css/main.26313368.chunk.css",
+    "static/js/main.8dc279a5.chunk.js"
+  ]
+}
