@@ -6,8 +6,8 @@ class Navigation extends Component {
   render() {
     const sections = ['Home', 'Github', 'Medium'];
     const links = {
-      'Home': '/' ,
-      'Github': 'github.com/chiexplores',
+      'Home': '/portfolio' ,
+      'Github': 'https://github.com/chiexplores',
       'Medium': 'https://medium.com/@chi.huynh'
     }
     const navLinks = sections.map((section, idx) => {
